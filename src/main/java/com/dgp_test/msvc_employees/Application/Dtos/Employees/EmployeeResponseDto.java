@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmployeeResponseDto {
+    private Long id;
     private String firstName;
 
     private String secondName;

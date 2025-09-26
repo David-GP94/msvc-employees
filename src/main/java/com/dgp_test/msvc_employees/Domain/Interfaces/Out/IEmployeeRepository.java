@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface IEmployeeRepository extends JpaRepository<Employee, Long> {
 
-    @Query("SELECT e FROM Employee e WHERE " +
+    @Query("SELECT e FROM Employee e  WHERE " +
             "LOWER(e.firstName) LIKE LOWER(:pattern) OR " +
             "LOWER(e.secondName) LIKE LOWER(:pattern) OR " +
             "LOWER(e.lastNamePaternal) LIKE LOWER(:pattern) OR " +
@@ -18,6 +18,7 @@ public interface IEmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> findByNameContaining(@Param("pattern") String pattern);
 
     List<Employee> findAllByIsActiveTrue();
+    Optional<Employee> findByIdAndIsActiveTrue(Long id);
 
     @Query("SELECT e FROM Employee e WHERE e.firstName = :firstName AND e.lastNamePaternal = :lastNamePaternal AND " +
             "(e.lastNameMaternal = :lastNameMaternal OR (e.lastNameMaternal IS NULL AND :lastNameMaternal IS NULL)) AND e.age = :age")

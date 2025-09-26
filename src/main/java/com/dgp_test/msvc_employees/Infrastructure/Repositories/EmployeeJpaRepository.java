@@ -27,12 +27,12 @@ public class EmployeeJpaRepository implements IEmployeePersistence {
 
     @Override
     public Optional<Employee> findById(Long id) {
-        return _employeeRepository.findById(id);
+        return _employeeRepository.findByIdAndIsActiveTrue(id);
     }
 
     @Override
     public List<Employee> findByPartialName(String name) {
-        return _employeeRepository.findByNameContaining(name);
+        return _employeeRepository.findByNameContaining("%"+name+"%");
 
     }
 

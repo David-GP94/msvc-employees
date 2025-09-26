@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1410b629-bebc-461a-b19d-524a49f3b304" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/BatchCreationResultDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/CreateEmployeeRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/EmployeeResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/FailedEmployeeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/UpdateEmployeeRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/CustomExceptions/EntityExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/In/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/In/IEmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeePersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/EmployeeResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/EmployeeResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Utils/GeneralMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Utils/GeneralMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/EmployeeJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/EmployeeJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Responses/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Responses/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

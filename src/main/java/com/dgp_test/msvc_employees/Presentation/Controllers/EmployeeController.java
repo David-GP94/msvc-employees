@@ -64,7 +64,7 @@ public class EmployeeController {
     public ResponseEntity<GlobalResponse<Void>> delete(@PathVariable Long id){
         _employeeService.delete(id);
         GlobalResponse<Void> response = new GlobalResponse<>(true, GeneralMethods.GetGeneralMessage(5), null);
-        return new ResponseEntity<>(response, HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @GetMapping("/search")

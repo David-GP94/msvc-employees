@@ -18,4 +18,11 @@ public interface IEmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> findByNameContaining(@Param("pattern") String pattern);
 
     List<Employee> findAllByIsActiveTrue();
+
+    @Query("SELECT e FROM Employee e WHERE e.firstName = :firstName AND e.lastNamePaternal = :lastNamePaternal AND " +
+            "(e.lastNameMaternal = :lastNameMaternal OR (e.lastNameMaternal IS NULL AND :lastNameMaternal IS NULL)) AND e.age = :age")
+    Optional<Employee> findByNameAndAge(@Param("firstName") String firstName,
+                                        @Param("lastNamePaternal") String lastNamePaternal,
+                                        @Param("lastNameMaternal") String lastNameMaternal,
+                                        @Param("age") Integer age);
 }

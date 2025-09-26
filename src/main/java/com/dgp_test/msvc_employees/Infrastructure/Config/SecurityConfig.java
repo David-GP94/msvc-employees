@@ -13,19 +13,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf().disable() // Desactivar CSRF para APIs REST
-                .authorizeRequests()
-                .antMatchers(
-                        "/swagger-ui/**",
-                        "/swagger-ui.html",
-                        "/v3/api-docs/**",
-                        "/api-docs/**",
-                        "/webjars/**"
-                ).permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin().disable()
-                .httpBasic();
+            .csrf().disable() // Deshabilitar CSRF (adecuado para APIs REST)
+            .authorizeRequests()
+            .anyRequest().permitAll(); // Permitir todas las solicitudes sin autenticación
         return http.build();
     }
 }

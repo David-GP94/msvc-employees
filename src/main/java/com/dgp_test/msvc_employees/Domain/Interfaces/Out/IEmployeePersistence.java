@@ -6,11 +6,13 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IEmployeePersistence {
-    Employee save(Employee employee);
+    List<Employee> saveAll(List<Employee> employees);
 
     List<Employee> findAllActive();
 
     Optional<Employee> findById(Long id);
 
     List<Employee> findByPartialName(String name);
+    Employee save(Employee employee);
+    Optional<Employee> findByNameAndAge(String name, String lastNamePaternal, String lastNameMaternal, Integer age);
 }

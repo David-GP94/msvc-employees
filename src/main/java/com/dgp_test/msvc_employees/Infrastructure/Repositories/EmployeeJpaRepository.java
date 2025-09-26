@@ -3,7 +3,6 @@ package com.dgp_test.msvc_employees.Infrastructure.Repositories;
 import com.dgp_test.msvc_employees.Domain.Entities.Employee;
 import com.dgp_test.msvc_employees.Domain.Interfaces.Out.IEmployeePersistence;
 import com.dgp_test.msvc_employees.Domain.Interfaces.Out.IEmployeeRepository;
-import com.dgp_test.msvc_employees.Infrastructure.Config.CustomExceptions.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -17,8 +16,8 @@ public class EmployeeJpaRepository implements IEmployeePersistence {
     private final IEmployeeRepository _employeeRepository;
 
     @Override
-    public Employee save(Employee employee) {
-        return _employeeRepository.save(employee);
+    public List<Employee> saveAll(List<Employee> employees) {
+        return _employeeRepository.saveAll(employees);
     }
 
     @Override
@@ -35,5 +34,15 @@ public class EmployeeJpaRepository implements IEmployeePersistence {
     public List<Employee> findByPartialName(String name) {
         return _employeeRepository.findByNameContaining(name);
 
+    }
+
+    @Override
+    public Employee save(Employee employee) {
+        return _employeeRepository.save(employee);
+    }
+
+    @Override
+    public Optional<Employee> findByNameAndAge(String name, String lastNamePaternal, String lastNameMaternal, Integer age) {
+        return _employeeRepository.findByNameAndAge(name, lastNamePaternal, lastNameMaternal, age);
     }
 }

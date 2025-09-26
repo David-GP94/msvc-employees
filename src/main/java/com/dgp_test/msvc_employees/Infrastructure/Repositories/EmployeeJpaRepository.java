@@ -1,8 +1,8 @@
 package com.dgp_test.msvc_employees.Infrastructure.Repositories;
 
 import com.dgp_test.msvc_employees.Domain.Entities.Employee;
-import com.dgp_test.msvc_employees.Domain.Interfaces.Out.IEmployeePersistence;
-import com.dgp_test.msvc_employees.Domain.Interfaces.Out.IEmployeeRepository;
+import com.dgp_test.msvc_employees.Domain.Interfaces.Out.Persistence.IEmployeePersistence;
+import com.dgp_test.msvc_employees.Domain.Interfaces.Out.JpaRepositories.IEmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

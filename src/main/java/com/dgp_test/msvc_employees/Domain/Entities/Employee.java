@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -72,4 +73,7 @@ public class Employee {
     protected void onCreate() {
         registrationDate = LocalDateTime.now(ZoneId.of("America/Mexico_City"));
     }
+
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
 }

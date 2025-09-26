@@ -5,11 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1410b629-bebc-461a-b19d-524a49f3b304" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Auth/LoginRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/JpaRepositories/IRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/JpaRepositories/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/Persistence/IRolePersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/Persistence/IUserPersisntece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/Security/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/Security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/Security/Jwt/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/Security/Jwt/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/RoleJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/UserJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/EmployeeResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Dtos/Employees/EmployeeResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Application/Services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/Persistence/IEmployeePersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Domain/Interfaces/Out/JpaRepositories/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Config/Security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/EmployeeJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Infrastructure/Repositories/EmployeeJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,5 +129,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgp_test/msvc_employees/Presentation/Controllers/EmployeeController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

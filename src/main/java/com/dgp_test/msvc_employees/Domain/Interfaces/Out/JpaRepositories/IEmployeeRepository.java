@@ -1,4 +1,4 @@
-package com.dgp_test.msvc_employees.Domain.Interfaces.Out;
+package com.dgp_test.msvc_employees.Domain.Interfaces.Out.JpaRepositories;
 
 import com.dgp_test.msvc_employees.Domain.Entities.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

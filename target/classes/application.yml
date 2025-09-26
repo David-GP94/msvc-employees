@@ -1,3 +1,6 @@
+jwt:
+  secret: FuE1iqwC6o8mBo9aTRDAMXvHEPA1BAC2jvEk19gyLoU=
+  expiration: 3600
 spring:
 
   application:

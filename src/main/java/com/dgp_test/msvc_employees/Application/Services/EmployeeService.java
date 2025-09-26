@@ -6,7 +6,7 @@ import com.dgp_test.msvc_employees.Application.Dtos.Employees.EmployeeResponseDt
 import com.dgp_test.msvc_employees.Application.Dtos.Employees.FailedEmployeeDto;
 import com.dgp_test.msvc_employees.Domain.Entities.Employee;
 import com.dgp_test.msvc_employees.Domain.Interfaces.In.IEmployeeService;
-import com.dgp_test.msvc_employees.Domain.Interfaces.Out.IEmployeePersistence;
+import com.dgp_test.msvc_employees.Domain.Interfaces.Out.Persistence.IEmployeePersistence;
 import com.dgp_test.msvc_employees.Infrastructure.Config.CustomExceptions.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityExistsException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -70,15 +71,16 @@ public class EmployeeService implements IEmployeeService {
     @Transactional
     public Employee update(Long id, Employee employee) {
         Employee existing = findById(id);
-        existing.setFirstName(employee.getFirstName());
-        existing.setSecondName(employee.getSecondName());
-        existing.setLastNamePaternal(employee.getLastNamePaternal());
-        existing.setLastNameMaternal(employee.getLastNameMaternal());
-        existing.setAge(employee.getAge());
-        existing.setGender(employee.getGender());
-        existing.setBirthDate(employee.getBirthDate());
-        existing.setPosition(employee.getPosition());
-        existing.setIsActive(employee.getIsActive());
+        existing.setFirstName(Objects.requireNonNullElse(employee.getFirstName(), existing.getFirstName()));
+        existing.setSecondName(Objects.requireNonNullElse(employee.getSecondName(), existing.getSecondName()));
+        existing.setLastNamePaternal(Objects.requireNonNullElse(employee.getLastNamePaternal(), existing.getLastNamePaternal()));
+        existing.setLastNameMaternal(Objects.requireNonNullElse(employee.getLastNameMaternal(), existing.getLastNameMaternal()));
+        existing.setAge(Objects.requireNonNullElse(employee.getAge(), existing.getAge()));
+        existing.setGender(Objects.requireNonNullElse(employee.getGender(), existing.getGender()));
+        existing.setBirthDate(Objects.requireNonNullElse(employee.getBirthDate(), existing.getBirthDate()));
+        existing.setPosition(Objects.requireNonNullElse(employee.getPosition(), existing.getPosition()));
+        existing.setIsActive(Objects.requireNonNullElse(employee.getIsActive(), existing.getIsActive()));
+
         return _employeePersistence.save(existing);
     }
 

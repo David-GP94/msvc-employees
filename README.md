@@ -125,13 +125,19 @@ This interface allows you to explore all API endpoints, view request/response sc
 
 ---
 
-## Notes
+Notes
 
-* The JWT token is required for accessing protected endpoints.
-* Roles: `USER` and `ADMIN`.
-* Ensure the `application.yml` environment variables are correctly set in Docker Compose for database connectivity.
-* The Dockerfile and docker-compose.yml files are included for easy deployment.
-* All responses follow a consistent `GlobalResponse` structure for success, message, and data.
+The JWT token is required for accessing protected endpoints.
+
+Roles: USER and ADMIN.
+
+Ensure the environment variables in Docker Compose are correctly set for database connectivity.
+
+The Dockerfile and docker-compose.yml files are included for easy deployment.
+
+All responses follow a consistent GlobalResponse structure for success, message, and data.
+
+Docker is required to run the application as designed in the deliverables.
 
 ---
 

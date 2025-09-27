@@ -16,6 +16,7 @@ C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Repositories\RoleJpaRepository.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Domain\Interfaces\Out\Persistence\IUserPersisntece.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Config\Security\Jwt\JwtFilter.java
+C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Config\Logging\RequestLoggingFilter.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Dtos\Employees\BatchCreationResultDto.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Dtos\Employees\FailedEmployeeDto.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Config\Security\SecurityConfig.java
@@ -28,6 +29,7 @@ C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Dtos\Employees\EmployeeResponseDto.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Domain\Interfaces\Out\JpaRepositories\IEmployeeRepository.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Domain\Interfaces\Out\JpaRepositories\IRoleRepository.java
+C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Config\Documentation\SwaggerConfig.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Dtos\Auth\LoginRequestDto.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Repositories\EmployeeJpaRepository.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Services\EmployeeService.java

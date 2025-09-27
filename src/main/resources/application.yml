@@ -51,7 +51,7 @@ logging:
     org.springframework.web: INFO
     org.hibernate: ERROR
   file:
-    name: logs/employee-service.log
+    name: logs/employee-service-test.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

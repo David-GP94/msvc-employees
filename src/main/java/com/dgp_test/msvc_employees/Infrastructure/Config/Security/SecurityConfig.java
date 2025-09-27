@@ -29,7 +29,7 @@ public class SecurityConfig {
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
             .authorizeRequests()
-            .antMatchers("/api/auth/**", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
+            .antMatchers("/api/auth/**", "/swagger-ui/**", "/v3/api-docs/**","/actuator/**").permitAll()
             .antMatchers("/employees/batch").hasRole("ADMIN")
             .anyRequest().authenticated()
             .and()

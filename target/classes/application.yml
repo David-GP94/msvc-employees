@@ -1,6 +1,7 @@
 jwt:
   secret: FuE1iqwC6o8mBo9aTRDAMXvHEPA1BAC2jvEk19gyLoU=
   expiration: 3600
+
 spring:
 
   application:
@@ -27,20 +28,36 @@ spring:
       pathmatch:
         matching-strategy: ant_path_matcher
 
-  logging:
-    level:
-      root: INFO
-      com.example: DEBUG
-      org.springframework.web: DEBUG
 
   management:
     endpoints:
       web:
         exposure:
-          include: health,info
+          include: "*"
 
   springdoc:
     api-docs:
       path: /api-docs
     swagger-ui:
       path: /swagger-ui.html
+      operations-sorter: alpha
+      tags-sorter: alpha
+      display-request-duration: true
+
+logging:
+  level:
+    root: INFO
+    com.david.employee: DEBUG
+    org.springframework.web: INFO
+    org.hibernate: ERROR
+  file:
+    name: logs/employee-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+info:
+  app:
+    name: Microservice Employee Management
+    description: API for managing employees
+    version: 1.0.0

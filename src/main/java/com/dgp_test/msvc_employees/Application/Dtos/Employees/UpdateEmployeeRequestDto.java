@@ -2,7 +2,9 @@ package com.dgp_test.msvc_employees.Application.Dtos.Employees;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
@@ -10,6 +12,8 @@ import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class UpdateEmployeeRequestDto {
     private String firstName;
 

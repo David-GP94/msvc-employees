@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dgp_test.msvc_employees.MsvcEmployeesApplicationTests" time="11.737" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="3.89" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,5 +56,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="contextLoads" classname="com.dgp_test.msvc_employees.MsvcEmployeesApplicationTests" time="0.354"/>
+  <testcase name="getEmployeeById_resourceNotFound" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.294"/>
+  <testcase name="searchEmployee_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.056"/>
+  <testcase name="getAllEmployees_resourceNotFound" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.014"/>
+  <testcase name="getEmployeeById_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.016"/>
+  <testcase name="createEmployees_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.13"/>
+  <testcase name="getAllEmployees_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.011"/>
+  <testcase name="deleteEmployee_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.007"/>
+  <testcase name="updateEmployee_success" classname="com.dgp_test.msvc_employees.Presentation.Controllers.EmployeeControllerTest" time="0.049"/>
 </testsuite>

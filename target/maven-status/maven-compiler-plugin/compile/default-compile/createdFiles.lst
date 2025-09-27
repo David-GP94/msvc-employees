@@ -1,1 +1,4 @@
+com\dgp_test\msvc_employees\Application\Dtos\Employees\UpdateEmployeeRequestDto$UpdateEmployeeRequestDtoBuilder.class
+com\dgp_test\msvc_employees\Application\Dtos\Employees\CreateEmployeeRequestDto$CreateEmployeeRequestDtoBuilder.class
+com\dgp_test\msvc_employees\Application\Dtos\Employees\EmployeeResponseDto$EmployeeResponseDtoBuilder.class
 com\dgp_test\msvc_employees\MsvcEmployeesApplication.class

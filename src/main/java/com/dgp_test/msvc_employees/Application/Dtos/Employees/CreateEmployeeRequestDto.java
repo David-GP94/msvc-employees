@@ -3,6 +3,7 @@ package com.dgp_test.msvc_employees.Application.Dtos.Employees;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class CreateEmployeeRequestDto {
     @NotBlank(message = "First Name is required.")
     private String firstName;
@@ -34,7 +36,8 @@ public class CreateEmployeeRequestDto {
 
     @NotNull(message = "Birth Date es obligatorio.")
     @Past(message = "Birth date debe estar en el pasado.")
-    @Schema(description = "Format Birth Date dd/MM/yyyy", example = "21/02/1994")
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    @Pattern(regexp = "\\d{2}-\\d{2}-\\d{4}", message = "Birth date must be in format dd-MM-yyyy")
     private LocalDate birthDate;
 
     @NotBlank(message = "Position is required.")

@@ -174,6 +174,13 @@ jobs:
 * For production, the application will connect to the actual MySQL server, so the CI service is only for automated testing.
 
 ---
+## API Contract
+
+This project includes an OpenAPI 3.0 contract that documents all API endpoints, request/response models, and security requirements.
+
+- The contract file is located at: `docs/api-contract.yaml`
+- You can view and interact with the API using Swagger UI or import it into Postman.
+- All endpoints require JWT authentication, except `/api/auth/login`.
 
 ## Swagger Documentation
 

@@ -8,6 +8,9 @@ import com.dgp_test.msvc_employees.Domain.Entities.Employee;
 import com.dgp_test.msvc_employees.Domain.Interfaces.In.IEmployeeService;
 import com.dgp_test.msvc_employees.Infrastructure.Config.CustomExceptions.ResourceNotFoundException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +48,13 @@ class EmployeeControllerTest {
 
     @Autowired
     private ObjectMapper objectMapper; // Para serializar payloads
+
+    @BeforeEach
+    void setup() {
+        objectMapper.registerModule(new JavaTimeModule());
+        objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+    }
+
 
     @Test
     @WithMockUser(username = "user", roles = "USER")

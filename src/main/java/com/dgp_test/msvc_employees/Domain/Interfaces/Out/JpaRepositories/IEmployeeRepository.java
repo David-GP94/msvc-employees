@@ -10,11 +10,11 @@ import java.util.Optional;
 
 public interface IEmployeeRepository extends JpaRepository<Employee, Long> {
 
-    @Query("SELECT e FROM Employee e  WHERE " +
+    @Query("SELECT e FROM Employee e WHERE e.isActive = true AND (" +
             "LOWER(e.firstName) LIKE LOWER(:pattern) OR " +
             "LOWER(e.secondName) LIKE LOWER(:pattern) OR " +
             "LOWER(e.lastNamePaternal) LIKE LOWER(:pattern) OR " +
-            "LOWER(e.lastNamePaternal) LIKE LOWER(:pattern)")
+            "LOWER(e.lastNameMaternal) LIKE LOWER(:pattern))")
     List<Employee> findByNameContaining(@Param("pattern") String pattern);
 
     List<Employee> findAllByIsActiveTrue();

@@ -35,9 +35,9 @@ public class CreateEmployeeRequestDto {
     private String gender;
 
     @NotNull(message = "Birth Date es obligatorio.")
-    @Past(message = "Birth date debe estar en el pasado.")
+    @Past(message = "Birth date must be in the past.")
     @JsonFormat(pattern = "dd-MM-yyyy")
-    @Pattern(regexp = "\\d{2}-\\d{2}-\\d{4}", message = "Birth date must be in format dd-MM-yyyy")
+    @Schema(description = "Birth date in dd-MM-yyyy format", example = "29-09-2025", type = "string", pattern = "dd-MM-yyyy")
     private LocalDate birthDate;
 
     @NotBlank(message = "Position is required.")

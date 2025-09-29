@@ -115,7 +115,17 @@ docker-compose up --build
 3. MySQL will be available at port 3307 with database `technical_test`.
 
 ---
+## Swagger Documentation
 
+Swagger UI is available at:
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+This interface allows you to explore all API endpoints, view request/response schemas, and execute test requests.
+
+---
 ## Testing
 
 Unit tests are implemented using JUnit 5 and Mockito:
@@ -192,17 +202,6 @@ This project includes an OpenAPI 3.0 contract that documents all API endpoints, 
 - You can view and interact with the API using Swagger UI or import it into Postman.
 - All endpoints require JWT authentication, except `/api/auth/login`.
 
-## Swagger Documentation
-
-Swagger UI is available at:
-
-```
-http://localhost:8080/swagger-ui.html
-```
-
-This interface allows you to explore all API endpoints, view request/response schemas, and execute test requests.
-
----
 
 ## Notes
 

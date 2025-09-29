@@ -72,6 +72,19 @@ This project is a microservice built with Spring Boot 2.7.x for managing employe
 
 ---
 
+## Test Users
+
+To test the login functionality, you can use the following users:
+
+- **Admin User**
+   - Username: `admin`
+   - Password: `adminpass`
+
+- **Regular User**
+   - Username: `user`
+   - Password: `userpass`
+
+---
 ## Installation
 
 1. Clone the repository:
@@ -81,14 +94,11 @@ git clone https://github.com/David-GP94/msvc-employees.git
 cd msvc-employees
 ```
 
-2. Build the project using Maven:
+2. Ensure Docker and Docker Compose are installed:
 
-```bash
-mvn clean package
-```
+Install Docker
 
-3. Ensure Docker and Docker Compose are installed on your system.
-
+Install Docker Compose
 ---
 
 ## Running the Application

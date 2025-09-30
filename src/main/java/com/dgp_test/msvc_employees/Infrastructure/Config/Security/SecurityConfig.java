@@ -21,6 +21,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
     private final JwtFilter jwtFilter;
     private final CustomAuthenticationEntryPoint authenticationEntryPoint;
+    private final CustomAccessDeniedHandler accessDeniedHandler;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -30,10 +31,12 @@ public class SecurityConfig {
             .and()
             .authorizeRequests()
             .antMatchers("/api/auth/**", "/swagger-ui/**", "/v3/api-docs/**","/actuator/**").permitAll()
-            .antMatchers("/employees/batch").hasRole("ADMIN")
+            .antMatchers("/api/employees/create").hasRole("ADMIN")
             .anyRequest().authenticated()
             .and()
-            .exceptionHandling().authenticationEntryPoint(authenticationEntryPoint)
+            .exceptionHandling()
+                .authenticationEntryPoint(authenticationEntryPoint)
+                .accessDeniedHandler(accessDeniedHandler)
             .and()
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();

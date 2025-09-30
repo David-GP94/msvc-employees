@@ -33,5 +33,6 @@ C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Dtos\Auth\LoginRequestDto.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Repositories\EmployeeJpaRepository.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Application\Services\EmployeeService.java
+C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Infrastructure\Config\Security\CustomAccessDeniedHandler.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Presentation\Controllers\EmployeeController.java
 C:\Users\david.garcia\OneDrive - BUZZ WORD COMUNICACION\Escritorio\inv-test\msvc_employees\src\main\java\com\dgp_test\msvc_employees\Presentation\Responses\GlobalResponse.java

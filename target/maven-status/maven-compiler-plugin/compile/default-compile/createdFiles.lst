@@ -3,6 +3,7 @@ com\dgp_test\msvc_employees\Infrastructure\Config\CustomExceptions\EntityExistsE
 com\dgp_test\msvc_employees\Infrastructure\Config\Security\CustomAuthenticationEntryPoint.class
 com\dgp_test\msvc_employees\Application\Dtos\Employees\UpdateEmployeeRequestDto$UpdateEmployeeRequestDtoBuilder.class
 com\dgp_test\msvc_employees\Domain\Interfaces\Out\Persistence\IUserPersisntece.class
+com\dgp_test\msvc_employees\Infrastructure\Config\Security\CustomAccessDeniedHandler.class
 com\dgp_test\msvc_employees\Presentation\Controllers\EmployeeController.class
 com\dgp_test\msvc_employees\Domain\Entities\Role$RoleBuilder.class
 com\dgp_test\msvc_employees\Domain\Interfaces\Out\JpaRepositories\IEmployeeRepository.class
